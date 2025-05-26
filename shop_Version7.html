@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>المتجر الإلكتروني | Mostafa Web</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .badge-offer {background:#f44336;color:#fff;font-size:0.89rem;padding:2px 8px;border-radius:8px;margin-right:5px;}
+    .badge-new {background:#1a237e;color:#fff;font-size:0.89rem;padding:2px 8px;border-radius:8px;margin-right:5px;}
+    .stars {color:#fbc02d;}
+    .modal-bg {display:none;position:fixed;top:0;right:0;left:0;bottom:0;background:rgba(0,0,0,0.3);z-index:999;}
+    .modal-content {background:#fff;padding:2rem;border-radius:12px;max-width:350px;margin:8% auto;position:relative;}
+    .close-modal {position:absolute;top:10px;left:15px;font-size:1.5rem;cursor:pointer;color:#f44336;}
+    .filter-btns {display:flex;gap:1rem;justify-content:center;margin-bottom:2rem;}
+    .filter-btns button {background:#1a237e;color:#fff;border:none;padding:7px 18px;border-radius:7px;cursor:pointer;transition:background 0.2s;}
+    .filter-btns button.active, .filter-btns button:hover {background:#fbc02d;color:#1a237e;}
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="logo">Mostafa Web</a>
+      <ul>
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="shop.html">المتجر</a></li>
+        <li><a href="cart.html">عربة التسوق</a></li>
+        <li><a href="#contact">تواصل معنا</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1 style="text-align:center;color:#1a237e;">المتجر الإلكتروني</h1>
+    <div class="filter-btns" id="filterBtns"></div>
+    <div id="products" class="products-grid"></div>
+  </main>
+
+  <!-- نافذة التفاصيل المنبثقة -->
+  <div class="modal-bg" id="modalBg">
+    <div class="modal-content" id="modalContent">
+      <span class="close-modal" id="closeModal">&times;</span>
+      <div id="modalDetails"></div>
+    </div>
+  </div>
+
+  <footer class="main-footer">
+    <div class="footer-content">
+      <div class="footer-logo">Mostafa Web © 2025</div>
+      <div class="footer-social">
+        <a href="mailto:youremail@example.com" target="_blank"><i class="fas fa-envelope"></i></a>
+        <a href="https://wa.me/201234567890" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://facebook.com/yourprofile" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://instagram.com/yourprofile" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://github.com/MostafaMohamedm" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+    <div class="footer-links">
+      <a href="shop.html">المتجر</a> |
+      <a href="cart.html">عربة التسوق</a> |
+      <a href="#contact">تواصل معنا</a>
+    </div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
