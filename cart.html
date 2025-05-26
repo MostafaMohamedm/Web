@@ -2,37 +2,170 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <title>عربة التسوق | Mostafa Web</title>
+  <title>Mostafa Web | حلول رقمية متكاملة</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta name="description" content="تصميم مواقع، متاجر إلكترونية، تطبيقات موبايل، حلول متكاملة، تسويق، دعم فني، استشارات تقنية وأكثر مع فريق Mostafa Web.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cairo:wght@400;700&family=Poppins:wght@400;700&display=swap">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="light">
+  <!-- شريط إعلان متحرك -->
+  <div class="announcement-bar" id="announcementBar">
+    <span id="announcementText">🔥 الآن: خصومات تصل حتى 35% على جميع الخدمات! سارع بالتواصل معنا 🔥</span>
+  </div>
+
+  <!-- زر الوضع الداكن/الفاتح -->
+  <button id="themeToggle" title="تبديل الوضع" class="theme-toggle"><i class="fas fa-moon"></i></button>
+
+  <!-- هيدر -->
   <header>
     <nav>
-      <a href="index.html" class="logo">Mostafa Web</a>
+      <a href="#" class="logo">Mostafa Web</a>
       <ul>
-        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="#services">الخدمات</a></li>
         <li><a href="shop.html">المتجر</a></li>
         <li><a href="cart.html">عربة التسوق</a></li>
         <li><a href="#contact">تواصل معنا</a></li>
+        <li><a href="#about">عنّا</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <h1 style="text-align:center;color:#1a237e;">عربة التسوق</h1>
-    <div id="cart-items" class="cart-items"></div>
-    <div class="cart-summary">
-      <span id="cart-total">الإجمالي: 0 جنيه</span>
-      <button id="checkout-btn" class="btn">إتمام الشراء</button>
-    </div>
-  </main>
+  <!-- هيرو -->
+  <section class="hero">
+      <div>
+          <h1>ابتكر مستقبلك الرقمي مع Mostafa Web</h1>
+          <p>نصمم ونبرمج ونطوّر حلول رقمية متكاملة: مواقع، متاجر، تطبيقات، تسويق، استشارات، دعم فني وأكثر.</p>
+          <a href="#services" class="btn">اكتشف خدماتنا</a>
+          <a href="#contact" class="btn-secondary">اطلب استشارة مجانية</a>
+      </div>
+      <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80" alt="Landing" class="hero-img">
+  </section>
 
+  <!-- قسم الخدمات -->
+  <section id="services" class="services-section">
+    <h2>خدماتنا المميزة</h2>
+    <div class="services-list">
+      <div class="service-card">
+        <i class="fas fa-code"></i>
+        <h3>برمجة وتصميم المواقع</h3>
+        <ul>
+          <li>مواقع شركات، مدارس، عيادات، مؤسسات</li>
+          <li>مدونات وصفحات شخصية</li>
+          <li>مواقع إخبارية ومجلات إلكترونية</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-store"></i>
+        <h3>متاجر إلكترونية</h3>
+        <ul>
+          <li>متاجر متكاملة مع بوابات دفع وتوصيل</li>
+          <li>أنظمة كوبونات وعروض وخصومات</li>
+          <li>لوحة تحكم سهلة للمنتجات والطلبات</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-mobile-alt"></i>
+        <h3>تطبيقات موبايل</h3>
+        <ul>
+          <li>تطبيقات أندرويد وآيفون</li>
+          <li>ربط مع المواقع والمتاجر</li>
+          <li>واجهات عصرية وتجربة مستخدم ممتازة</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-bullhorn"></i>
+        <h3>التسويق الرقمي</h3>
+        <ul>
+          <li>إعلانات Google وFacebook</li>
+          <li>إدارة حملات السوشيال ميديا</li>
+          <li>تحليل الأداء والتقارير</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-lightbulb"></i>
+        <h3>استشارات تقنية</h3>
+        <ul>
+          <li>تحليل أفكار المشاريع مجاناً</li>
+          <li>دراسة جدوى تقنية</li>
+          <li>حلول متكاملة وتوصيات تطويرية</li>
+        </ul>
+      </div>
+      <div class="service-card special-card">
+        <i class="fas fa-headset"></i>
+        <h3>دعم فني وصيانة</h3>
+        <ul>
+          <li>متابعة دورية وتحديث المواقع والمتاجر</li>
+          <li>استجابة سريعة وحلول للمشاكل</li>
+          <li>دعم فني 24/7</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- عروض اليوم -->
+  <section id="offers" class="offers-section">
+    <h2>عروض اليوم</h2>
+    <div class="offers-list">
+      <div class="offer-card">
+        <span class="badge badge-offer">خصم 30%</span>
+        <h3>متجر إلكتروني احترافي</h3>
+        <p>متجر متكامل مع دومين واستضافة مجانًا + دعم فني لمدة 3 شهور.</p>
+        <span class="offer-price"><del>5000</del> <b>3500 جنيه</b></span>
+      </div>
+      <div class="offer-card">
+        <span class="badge badge-offer">هدية</span>
+        <h3>تصميم شعار وبزنس كارد</h3>
+        <p>عند طلب موقع أو متجر: ستحصل على شعار وكارت شخصي مجانًا.</p>
+        <span class="offer-price">مجاني مع أي باقة!</span>
+      </div>
+      <div class="offer-card">
+        <span class="badge badge-offer">خصم 20%</span>
+        <h3>تطبيق موبايل</h3>
+        <p>برمجة تطبيق أندرويد أو آيفون مع ربطه بموقعك ومتجرك.</p>
+        <span class="offer-price"><del>6000</del> <b>4800 جنيه</b></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- قسم التواصل -->
+  <section id="contact" class="contact-section">
+    <h2>تواصل معنا الآن</h2>
+    <div class="contact-methods">
+      <a href="mailto:youremail@example.com" target="_blank" class="contact-link"><i class="fas fa-envelope"></i> البريد الإلكتروني</a>
+      <a href="https://wa.me/201234567890" target="_blank" class="contact-link"><i class="fab fa-whatsapp"></i> واتساب</a>
+      <a href="https://t.me/yourusername" target="_blank" class="contact-link"><i class="fab fa-telegram"></i> تيليجرام</a>
+      <a href="https://facebook.com/yourprofile" target="_blank" class="contact-link"><i class="fab fa-facebook"></i> فيسبوك</a>
+      <a href="https://instagram.com/yourprofile" target="_blank" class="contact-link"><i class="fab fa-instagram"></i> انستجرام</a>
+    </div>
+    <form class="contact-form" id="contact-form">
+      <input type="text" id="name" placeholder="الاسم بالكامل" required>
+      <input type="email" id="email" placeholder="البريد الإلكتروني" required>
+      <input type="text" id="phone" placeholder="رقم الهاتف" required>
+      <textarea id="message" placeholder="اكتب رسالتك أو طلبك هنا..." required></textarea>
+      <button type="submit">إرسال</button>
+    </form>
+    <div id="contact-result"></div>
+  </section>
+
+  <!-- عن الموقع -->
+  <section id="about" class="about-section">
+    <h2>من نحن</h2>
+    <p>
+      نحن فريق Mostafa Web، محترفون في تطوير المواقع والمتاجر والتطبيقات الرقمية، نهتم بتقديم تجربة فريدة للعملاء من خلال الجودة، السرعة، والدعم المتواصل.
+      <br>
+      رؤيتنا: تمكين الأفراد والشركات من النجاح الرقمي بأفضل الأدوات والحلول.
+    </p>
+  </section>
+
+  <!-- زر الرجوع للأعلى -->
+  <button id="scrollToTopBtn" title="العودة للأعلى"><i class="fas fa-arrow-up"></i></button>
+
+  <!-- الفوتر -->
   <footer class="main-footer">
     <div class="footer-content">
-      <div class="footer-logo">Mostafa Web © 2025</div>
+      <div class="footer-logo">Mostafa Web © 2025 - جميع الحقوق محفوظة</div>
       <div class="footer-social">
         <a href="mailto:youremail@example.com" target="_blank"><i class="fas fa-envelope"></i></a>
         <a href="https://wa.me/201234567890" target="_blank"><i class="fab fa-whatsapp"></i></a>
@@ -42,6 +175,7 @@
       </div>
     </div>
     <div class="footer-links">
+      <a href="#services">الخدمات</a> |
       <a href="shop.html">المتجر</a> |
       <a href="cart.html">عربة التسوق</a> |
       <a href="#contact">تواصل معنا</a>
